@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestNGPractice]" parallel="methods">
+  <test thread-count="2" name="EnvironmntTest(failed)" parallel="methods">
+    <classes>
+      <class name="com.xoriant.qa.testclasses.LoginTest">
+        <methods>
+          <include name="loginWithValidUsernameAndInvalidPassword" invocation-numbers="0"/>
+          <include name="loginWithInvalidUsernameAndValidPassword" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginWithValidUsernameAndValidPassword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.xoriant.qa.testclasses.LoginTest -->
+    </classes>
+  </test> <!-- EnvironmntTest(failed) -->
+</suite> <!-- Failed suite [TestNGPractice] -->
