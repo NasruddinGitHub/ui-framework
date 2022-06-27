@@ -26,11 +26,17 @@ public class BaseClass {
 	public void maximizeBrowser() {
 		driver.manage().window().maximize();
 	}
+
 	@Step("It get the current window's title")
 	public String getBrowserTitle() {
 		return driver.getTitle();
 	}
+
 	public String getCurrentWindowUrl() {
 		return driver.getCurrentUrl();
+	}
+
+	public void minimizeBrowser() {
+		driver.manage().window().minimize();
 	}
 }
